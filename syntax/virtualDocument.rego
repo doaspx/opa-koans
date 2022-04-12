@@ -11,7 +11,7 @@ is_config {
 getFileNames[x] {
 	file := files[_]
 	file.type = "posix"
-	file.path = trim(file.path)
+	file.path = trim_space(file.path)
 	tmp := split(file.path, "/")
 	x := tmp[count(tmp) - 1]
 }
@@ -19,7 +19,7 @@ getFileNames[x] {
 getFileNames[x] {
 	file := files[_]
 	file.type = "traditional-mac"
-	file.path = trim(file.path)
+	file.path = trim_space(file.path)
 	tmp := split(file.path, ":")
 	x := tmp[count(tmp) - 1]
 }
