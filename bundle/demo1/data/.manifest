@@ -1,0 +1,8 @@
+{
+  "revision": "26c4800",
+  "roots": [
+    "roles",
+    "bindings",
+    "aaa"
+  ]
+}

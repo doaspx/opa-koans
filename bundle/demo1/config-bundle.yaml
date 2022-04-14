@@ -1,0 +1,17 @@
+---
+services:
+  - name: init_bundle
+    url: http://127.0.0.1:8080/
+
+labels:
+  app: opa
+  environment: production
+
+bundles:
+  # 定义bundle, 支持多个
+  authz:
+    # bundle所处的服务
+    service: init_bundle
+    # 这里指从resource处更新bundle文件包，即：
+    # http://demo-server:8888/bundle/rbac.tar.gz
+    resource: download/bundle.tar.gz

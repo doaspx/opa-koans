@@ -1,0 +1,2 @@
+tar -czf bundle.tar.gz ./data
+opa run -s -a 0.0.0.0:8181 -c config-bundle.yaml
